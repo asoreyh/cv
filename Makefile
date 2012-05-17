@@ -1,14 +1,13 @@
 CODE=cv
-NAME=${CODE}
+NAME=${CODE}-eng
 
 all:
 	xelatex ${NAME}.tex
 	xelatex ${NAME}.tex
 
 clean:
-	rm ${NAME}.aux 
-	rm ${NAME}.log 
-	rm ${NAME}.out 
+	rm -f *.aux *.log *.out *.bak
+
 del:
 	rm ${NAME}.pdf 
 	make clean

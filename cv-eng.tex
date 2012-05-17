@@ -1,0 +1,732 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%% TODO %%%
+
+% Agregar subsidios en los cuales participo
+% pasar publicaciones a formato "bibtex"
+% agregar una sección de desarrollo de prototipos: FOCA/FOG, ASCII, ANDES
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+\usepackage[british]{babel}
+\usepackage{etaremune}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=9.0in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Hernán Asorey - vita},
+	pdfauthor={Hernán Asorey},
+]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{.250em}
+  }
+}{
+  \end{list}
+}
+
+
+% DOCUMENT
+\begin{document}
+\begin{center}{\huge \bf Hernán Asorey}\\[1cm]\end{center}
+\begin{minipage}[t]{0.495\textwidth}
+  Centro Atómico Bariloche\\
+  Department of Technology and\\
+  Research in High Energy Physics\\
+  Av. E. Bustillo 9500\\
+  (8400) San Carlos de Bariloche\\
+  Río Negro, Argentina\\[.2cm]
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+  Phone: (+54-294) 444-5151 ext 38\\
+  Fax: (+54-294) 444-5199\\
+  Email: \href{mailto:asoreyh@cab.cnea.gov.ar}{asoreyh@cab.cnea.gov.ar}\\
+  \href{http://fisica.cab.cnea.gov.ar/particulas/wiki/User:Asoreyh}{Home page}\\
+  twitter: \href{https://twitter.com/#!/asoreyh}{@asoreyh}\\
+  skype: asoreyh\\
+\end{minipage}
+\hrule
+
+\section*{Personal Information}
+Born in Quilmes, Buenos Aires, Argentina, on February 05$^\mathrm{th}$, 1974 (38 years old)\\
+Argentinian, married, two daughters.
+
+%%\hrule\
+\section*{Current Positions}
+\begin{itemize}
+\item \emph{Permanent Position} at Gerencia de Tecnología e Investigación en Altas
+Energías (Technology and Research in High Energy Physics Department), Bariloche
+Atomic Centre, National Commission of Atomic Energy (CNEA)
+\item \emph{Senior Teaching Assistant (Jefe de Trabajos Prácticos)} at
+Physics Department of Rio Negro National University (UNRN)
+\item \emph{Teaching Assistant} at Physics Department of Instituto Balseiro, Cuyo
+National University (UNC)
+\end{itemize}
+
+%%\hrule
+\section*{Previous positions}
+\noindent
+\years{2006-2012}Ph.D. student, Instituto Balseiro (UNC).\\
+\years{2004-2005}Master in Science, Instituto Balseiro (UNC).\\
+\years{2002-2004}Physics undergraduate student, Instituto Balseiro (UNC).\\
+\years{1994-1995}Teaching assistant at Physics Department, Engineering Faculty,
+University of Buenos Aires.\\
+\years{1992-1996}Industrial Engineering (first four of five years). University
+of Buenos Aires.\\
+\years{1992-2001}AIM S.A., metal mechanical industry, R+D department on
+industrial projects, Buenos Aires, Argentina.\\
+
+%\hrule
+\section*{Education}
+\noindent
+%\years{2012}\textsc{Ph.D. in Physics}\\
+%{\emph{Institution}}: Bariloche Atomic Centre - Instituto Balseiro, CNEA-UNC\\
+%{\emph{Thesis}}: Present and Future Applications for the Water-Cherenkov Detectors of the Pierre Auger Observatory. 
+%{\emph{Advisor}}: Dr. Ingomar Allekotte 
+\years{2005}\textsc{Master in Science, Physics}\\
+{\emph{Orientation}}: Fields and particle physics\\
+{\emph{Institution}}: Instituto Balseiro, Bariloche Atomic Centre (CNEA-UNC)\\
+{\emph{Thesis}}: Event Reconstruction with the Surface Detectors of the Pierre
+Auger Observatory\\
+{\emph{Advisor}}: Dr. Ingomar Allekotte\\ 
+\years{2004}\textsc{``Licenciado'' in Physics}\\
+{\emph{Institution}}: Instituto Balseiro, Bariloche Atomic Centre (CNEA-UNC)\\
+
+%\hrule
+\section*{Honours, Awards \& Fellowships}
+\noindent
+\years{2011}Balseiro Foundation ``Best Teacher Award'' for outstanding teaching
+skills at Instituto Balseiro.\\
+\years{2008-2010}Fellowship awarded by the National Council of Scientific and
+Technical Investigations (CONICET) to obtain a Ph.D. degree.\\
+\years{2006-2007}Fellowship awarded by the Balseiro Foundation and the National
+Commission of Atomic Energy (FUNC-CNEA).\\
+\years{2005}Fellowship awarded by the National Commission of Atomic Energy
+(CNEA) to obtain a Master degree in Physics.\\
+\years{2002-2004}Fellowship awarded by the National Commission of Atomic
+Energy (CNEA) to obtain a Master to study ``Licenciatura en Física'' at
+Instituto Balseiro.\\
+
+\section*{Research \& Teaching Activities}
+
+Since I have earned my master degree in December 2005, I have been involved in
+the following projects:
+
+\subsection*{Pierre Auger Observatory}
+
+{\small{\textit{See \href{http://www.auger.org/}{www.auger.org}}}}
+\begin{itemize}
+\item Member of the Pierre Auger Collaboration since 2006
+\item Ultra High-Energy Cosmic Rays Physics 
+\item Data analysis of the Surface Detector
+\item Development of the reconstruction event chain of the Surface Detector
+\item Development and applications of the low energy modes (scaler and histogram
+modes) of the surface detectors of the Pierre Auger Observatory, for the study
+of transient events (Gamma Ray Bursts and Forbush events), and short and long
+term modulation of the galactic cosmic rays flux due to solar activity
+\item CORSIKA and detector simulations, oriented to determine the
+water-Cherenkov response working in the low energy modes
+\item Data analysis of the weather monitoring system of the Pierre Auger
+Observatory
+\end{itemize}
+
+\subsection*{Large Aperture Grb Observatory (LAGO)}
+{\emph{Declared of Scientific, Academic and Social interest by the Honourable
+House of Representatives of the Rio Negro Province, Dec. 42/2010.}}\\
+{\small{\textit{See
+\href{http://fisica.cab.cnea.gov.ar/particulas/laboratorio/lago}
+{http://fisica.cab.cnea.gov.ar/particulas/laboratorio/lago}}}}\\
+\begin{itemize}
+\item Member of the LAGO International Collaboration since 2006
+\item Simulations and data analysis for the detection of transient events
+(GRB and Forbush events), background radiation and atmospheric physics.
+\item Research, development and building of three water-Cherenkov detector
+prototypes for the LAGO project at Bariloche Atomic Centre. One of them will be
+installed at the Antarctic Peninsula.
+\item Design and coordination of the experiment ``Measurement of Muon Lifetime in
+Water'', done by undergraduate students at Instituto Balseiro.
+\end{itemize}
+
+\subsection*{Cherenkov Telescope Array (CTA)}
+{\small{\textit{See \href{http://www.cta-observatory.org}{www.cta-observatory.org}}}}
+\begin{itemize}
+\item Member of the CTA consortium since 2010
+\item Research and development of the autonomous station for control and data
+acquisition of the weather station and sky quality meter installed in San
+Antonio de los Cobres, Argentina, one of the site candidates for the CTA
+observatory.
+\end{itemize}
+
+\subsection*{ANDES Underground Laboratory}
+{\small{\textit{See \href{http://www.andeslab.org}{www.andeslab.org}}}}
+\begin{itemize}
+\item Estimation and measurements of the expected backgrounds at the ANDES
+underground lab due to natural radioactivity and high energy atmospheric muons
+\end{itemize}
+
+\subsection*{Teaching}
+{\small{\textit{See \href{http://www.ib.edu.ar}{www.ib.edu.ar} and
+\href{http://www.unrn.edu.ar}{www.unrn.edu.ar}}}}
+\begin{itemize}
+\item Teaching assistant, Experimental Physics III and Introduction to nuclear
+and particle physics courses, Instituto Balseiro (UNC)
+\item Senior teaching assistant, Physics I (introductory physics) course, UNRN.
+\end{itemize}
+
+\section*{Publications}
+\noindent
+\subsection*{Selected Works}
+\noindent
+During the development of my work within the Pierre Auger Observatory, I have
+been acting as the Physics coordinator and responsible of one of the full
+author list papers of the Pierre Auger Collaboration (The Pierre Auger
+Collaboration, JINST {\bf 6} P01003--P01020 (2011)), using the surface detector
+in a novel way, developed during my Ph.D. thesis, as a tool to study transient
+solar phenomena and heliospheric modulation of galactic cosmic rays flux. 
+
+This list is a personal selection of the works I have been directly involved:
+
+\begin{etaremune}
+\item \years{2012}H. Asorey and A. López Dávalos, {\emph{Fermi Problem: Power
+developed at the eruption of the Puyehue-Cordón Caulle volcanic system in June
+2011}}, Amer. Jour. Phys., {\emph{submitted}}, (2012).
+\href{http://arxiv.org/abs/1109.1165}{arXiv:1109.1165v1}[physics.ed-ph]
+Selected as the best arXiv paper of September 2011 by the
+\href{http://www.technologyreview.com/blog/arxiv/27140/}{M.I.T. Technology
+Review Physics arXiv Blog}, Sept. 2011.
+
+\item \years{2012}S. Dasso and H. Asorey, for the Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.asr.2011.12.028}{\emph{ The scaler mode in
+the Pierre Auger Observatory to study heliospheric modulation of cosmic rays
+}}, Adv. Space Res. {\bf{49}} (11), 1563--1569 (2012)
+
+\item \years{2012} H. Asorey, M. Arribere, X. Bertou, M. Gómez Berisso, F. Sánchez,
+{\emph{Expected Backgrounds at the ANDES Underground Laboratory}}
+plenary talk given at the Third International Workshop for the Design of the
+ANDES Underground Laboratory, Valparaiso, Chile, 11--12 Jan 2012.
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1088/1748-0221/6/01/P01003}{\emph{The Pierre Auger
+Observatory Scaler Mode for the Study of the Modulation of Galactic Cosmic Rays
+due to Solar Activity}}, JINST {\bf 6} P01003--
+P01020 (2011).
+$^*${\bf{Coordinator}}
+
+\item \years{2011}I. Allekotte, H. Arnaldi, H. Asorey, X. Bertou, M. Gómez Berisso,
+M. Sofo Haro, {\emph{Development of ultra-fast and ultra low power consumption
+electronics in the Bariloche Particle and Radiation Detection Laboratory}},
+poster presentation in the 96$^{\mathrm{th}}$ National Reunion SUF-AFA2011 of the Argentinian
+Physics Association, Montevideo, Uruguay, 20--23 Sept 2011.
+
+\item \years{2011}H. Asorey[Pierre Auger Collaboration], {\emph{Low energy radiation
+measurements with the water Cherenkov detector array of the Pierre Auger
+Observatory}}, in Prom. 32H International Cosmic Ray Conference, vol. 11
+462--465, Beijing, China, 11--18 Ago 2011
+
+\item \years{2010}J. Bl\"umer and The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1088/1367-2630/12/3/035001}{\emph{The Northern Site
+of the Pierre Auger Observatory}}, Journal of Physics {\bf 12} (3) 035001
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.physletb.2010.02.013}{\emph{Measurement of
+the energy spectrum of cosmic rays above $10^{18}$ eV using the Pierre Auger
+Observatory}}, Phys. Lett. {\bf B685} 239--246 (2010),\\
+\href{http://arxiv.org/abs/1002.1975}{arXiv:1002.1975v1}[astro-ph.HE]
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.nima.2009.11.018}{\emph{Trigger and Aperture
+of the Surface Detector Array of the Pierre Auger Observatory}}, NIM {\bf A613}
+29--39, (2010)
+
+\item \years{2010}H. Asorey[LAGO Collaboration], {\emph{The Large Aperture Gamma Ray
+Burst Observatory (LAGO)}}, plenary talk in the 3$^{\mathrm{rd}}$ International Workshop of
+High Energy Physics in the LHC Era HEP2010, Valparaiso, Chile, 4--8 Jan 2010.
+
+\item \years{2009}H. Asorey[Pierre Auger Collaboration], {\emph{Cosmic Ray Solar
+Modulation Studies at the Pierre Auger Observatory}}, in Proc. 31th
+International Cosmic Ray Conference, Lodz, Poland, 8--15 Jul 2009.
+
+\item \years{2009} The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2009.06.004}{\emph{Atmospheric
+effects on extensive air showers observed with the Surface Detector of the
+Pierre Auger Observatory}}, Astropart. Phys. {\bf 32}, 89--99, (2009),
+\href{http://arxiv.org/abs/0906.5497/}{arXiv:0906.5497v2}[astro-ph.IM]
+
+\item \years{2008}D. Allard {\emph et al.} [LAGO Collaboration],
+\href{http://dx.doi.org/10.1016/j.nima.2008.07.041}{\emph{Use of
+water-Cherenkov detectors to detect Gamma Ray Bursts at the Large Aperture GRB
+Observatory (LAGO)}}, NIM {\bf A595} 70--72 (2008)
+
+\item \years{2007}D. Allard {\emph et al.} [LAGO Collaboration], {\emph{Looking for
+the high energy component of GRBs at the Large Aperture GRB Observatory}}, in
+Proc. 30$^{\mathrm{th}}$ International Cosmic Ray Conference,  Mérida, Mexico, 3-11 Jul
+2007.
+
+\item \years{2007}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2006.11.002}{\emph{Anisotropy
+studies around the galactic centre at EeV energies with the Auger
+Observatory.}},  Astropart. Phys. {\bf 27} 244--253 (2007)
+
+\item \years{2006}D. Allard {\emph et al.} [LAGO Collaboration], {\emph{The Large
+Aperture GRB aperture}}, in Proc. of the Observational Astronomy in Argentina
+Workshop, Buenos Aires.
+
+\end{etaremune}
+
+\subsection*{Complete list of Journal papers}
+
+\begin{etaremune}
+\item \years{2012}H. Asorey and A. López Dávalos, {\emph{Fermi Problem: Power developed
+at the eruption of the Puyehue-Cordón Caulle volcanic system in June 2011}},
+Amer. Jour. Phys., {\emph{submitted}}, (2012)
+\href{http://arxiv.org/abs/1109.1165}{arXiv:1109.1165v1}[physics.ed-ph]
+
+\item \years{2012}S. Dasso and H. Asorey, for the Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.asr.2011.12.028}{\emph{ The scaler mode in
+the Pierre Auger Observatory to study heliospheric modulation of cosmic rays
+}}, Adv. Space Res. {\bf{49}} (11), 1563--1569 (2012)
+
+\item \years{2012}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1007/s10686-011-9247-0}{\emph{Design concepts for
+the Cherenkov Telescope Array CTA: an advanced facility for ground-based
+high-energy gamma-ray astronomy}}, Exper. Astron. {\bf{32}} (3), 193--316
+(2012)
+
+\item \years{2012}The Pierre Auger Collaboration, 
+\href{http://dx.doi.org/10.1016/j.astropartphys.2011.12.002}{\emph{Description
+of atmospheric conditions at the Pierre Auger Observatory using the Global Data
+Assimilation System (GDAS)}}, Astropart. Phys. {\bf{35}} (9), 591--607 (2012)
+
+\item \years{2012}The Pierre Auger Collaboration, 
+\href{http://dx.doi.org/10.1088/1475-7516/2011/11/022}{\emph{The effect of the
+geomagnetic field on cosmic ray energy estimates and large scale anisotropy
+searches on data from the Pierre Auger Observatory}}, JCAP {\bf{2011}} (022),
+1--23 (2012)
+
+\item \years{2012}The Pierre Auger Collaboration, 
+\href{http://dx.doi.org/10.1016/j.astropartphys.2011.10.004}{\emph{Search for
+signatures of magnetically-induced alignment in the arrival directions measured
+by the Pierre Auger Observatory}}, Astropart. Phys. {\bf{35}} (6), 354--361
+(2012)
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/10.1103/PhysRevD.84.122005}{\emph{Search for
+Ultra-High Energy Neutrinos in Highly Inclined Events at the Pierre Auger
+Observatory}}, Phys.  Rev. {\bf D84}, 122005, 1--16 (2011)
+\href{http://arxiv.org/abs/1202.1493}{arXiv:1202.1493}[astro-ph.HE]
+
+\item \years{2011}The Pierre Auger Collaboration, 
+\href{http://dx.doi.org/10.1016/j.astropartphys.2011.08.001}{\emph{The Lateral
+Trigger Probability function for UHE Cosmic Rays Showers detected by the Pierre
+Auger Observatory}}, Astropart. Phys. {\bf{35}} (5), 266--276 (2011)
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1088/1475-7516/2011/06/022}{\emph{Anisotropy and
+chemical composition of ultra-high energy cosmic rays using arrival directions
+measured by the Pierre Auger Observatory}}, JCAP {\bf 06} 022 (2011),
+\href{http://arxiv.org/abs/1106.3048}{arXiv:1101.3048v1}[astro-ph.HE]
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.nima.2011.01.049}{{\emph{Advanced
+functionality for radio analysis in the Offline software framework of the
+Pierre Auger Observatory}}}, NIM {\bf A635} 92--102
+(2011),\\
+\href{http://arxiv.org/abs/1101.4473}{arXiv:1101.4473v1}[astro-ph.HE]
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2010.12.007}{\emph{Search for
+First Harmonic Modulation in the Right Ascension Distribution of Cosmic Rays
+Detected at the Pierre Auger Observatory}}, Astropart. Phys. {\bf 34} 627--639
+(2011)
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1088/1748-0221/6/01/P01003}{\emph{The Pierre Auger
+Observatory Scaler Mode for the Study of the Modulation of Galactic Cosmic Rays
+due to Solar Activity}}, JINST {\bf 6} P01003--
+P01020 (2011). $^*${\bf{Coordinator}}
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2010.10.001}{\emph{The exposure
+of the hybrid detector of the Pierre Auger Observatory}}, Astropart. Phys. {\bf
+34}, 368--381 (2011)
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2010.08.010}{\emph{Update on
+the correlation of the highest energy cosmic rays with nearby extragalactic
+matter}},Astropart. Phys. {\bf 34}, 314--326 (2010),
+\href{http://arxiv.org/abs/1009.1855}{arXiv:1009.1855v2}[astro-ph.HE]
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.nima.2010.04.023}{\emph{The Fluorescence
+Detector of the Pierre Auger Observatory}}, NIM {\bf A620}, 227 (2010),
+\href{http://arxiv.org/abs/0907.4282}{arXiv:0907.4282v1}[astro-ph.IM]
+
+\item \years{2010}J. Bl\"umer and The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1088/1367-2630/12/3/035001}{\emph{The Northern Site
+of the Pierre Auger Observatory}}, Journal of Physics {\bf 12} (3) 035001
+(2010)
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2009.12.005}{\emph{A Study of
+the Effect of Molecular and Aerosol Conditions in the Atmosphere on Air
+Fluorescence Measurements at the Pierre Auger Observatory}}, Astropart. Phys.
+{\bf 33}, 108--129 (2010),
+\href{http://arxiv.org/abs/0907.4282}{arXiv:1002.0366v1}[astro-ph.HE]
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.physletb.2010.02.013}{\emph{Measurement of
+the energy spectrum of cosmic rays above $10^{18}$ eV using the Pierre Auger
+Observatory}}, Phys. Lett. {\bf B685} 239--246 (2010),
+\href{http://arxiv.org/abs/1002.1975}{arXiv:1002.1975v1}[astro-ph.HE]
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1103/PhysRevLett.104.091101}{\emph{Measurement of
+the Depth of Maximum of Extensive Air Showers above 10$^{18}$ eV}}, PRL {\bf
+104} 091101
+(2010)\href{http://arxiv.org/abs/1002.0699}{arXiv:1002.0699v1}[astro-ph.HE]
+
+\item \years{2010}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.nima.2009.11.018}{\emph{Trigger and Aperture
+of the Surface Detector Array of the Pierre Auger Observatory}}, NIM {\bf A613}
+29--39, (2010)
+
+\item \years{2009} The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2009.06.004}{\emph{Atmospheric
+effects on extensive air showers observed with the Surface Detector of the
+Pierre Auger Observatory}}, Astropart. Phys. {\bf 32}, 89--99, (2009),
+\href{http://arxiv.org/abs/0906.5497/}{arXiv:0906.5497v2}[astro-ph.IM]
+
+\item \years{2009}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2009.04.003}{\emph{Upper limit
+on the cosmic-ray photon fraction at EeV energies from the Pierre Auger
+Observatory.}}, Astropart. Phys. {\bf 31} 399--406 (2009) 
+\href{http://arxiv.org/abs/0903.1127/}{arXiv:0903.1127v1} [astro-ph.HE]
+
+\item \years{2009}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1103/PhysRevD.79.102001}{\emph{Limit on the diffuse
+flux of ultra-high energy tau neutrinos with the surface detector of the Pierre
+Auger Observatory.}}, Phys. Rev. {\bf D79} 10:1--15
+(2009)\href{http://arxiv.org/abs/0903.3385/}{arXiv:0903.3385v1}[astro-ph.HE]
+
+\item \years{2008}D. Allard {\emph et al.} [LAGO Collaboration],
+\href{http://dx.doi.org/10.1016/j.nima.2008.07.041}{\emph{Use of
+water-Cherenkov detectors to detect Gamma Ray Bursts at the Large Aperture GRB
+Observatory (LAGO)}}, NIM {\bf A595} 70--72 (2008)
+
+\item \years{2008}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1103/PhysRevLett.101.061101}{\emph{Observation of
+the Suppression of the Flux of Cosmic Rays above $4\times10^{19}$\,eV.}}, PRL
+{\bf 101} 061101 (2008)
+
+\item \years{2008}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1103/PhysRevLett.100.211101}{\emph{Upper limit on
+the diffuse flux of UHE tau neutrinos from the Pierre Auger Observatory.}}, PRL
+{\bf 100} 21101 (2008)
+
+\item \years{2008}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2008.01.003}{\emph{Upper limit
+on the cosmic-ray photon flux above 10$^{19}$\,eV using the surface detector of
+the Pierre Auger Observatory.}}, Astropart. Phys. {\bf 29} 243--256 (2008)
+
+\item \years{2008}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2008.01.002}{\emph{Correlation
+of the highest-energy cosmic rays with the positions of nearby active galactic
+nuclei.}}, Astropart. Phys. {\bf 29} 188--204 (2008)
+
+\item \years{2007}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1126/science.1151124}{\emph{Correlation of the
+highest energy cosmic rays with nearby extragalactic objects.}}, Science {\bf
+318} 939--943 (2007)
+
+\item \years{2007}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2006.11.002}{\emph{Anisotropy
+studies around the galactic centre at EeV energies with the Auger
+Observatory.}},  Astropart. Phys. {\bf 27} 244--253 (2007)
+
+\item \years{2007}The Pierre Auger Collaboration,
+\href{http://dx.doi.org/10.1016/j.astropartphys.2006.10.004}{\emph{An upper
+limit to the photon fraction in cosmic rays above 10$^{19}$\,eV from the Pierre
+Auger Observatory.}}, Astropart. Phys. {\bf 27} 155--168 (2007)
+\end{etaremune}
+
+\subsection*{Participation \& presentations at Schools \& Conferences}
+\noindent
+\begin{etaremune}
+\item \years{2012} H. Asorey, M. Arribere, X. Bertou, M. Gómez Berisso, F. Sánchez, 
+{\emph{Expected Backgrounds at the ANDES Underground Laboratory}}
+plenary talk given at the Third International Workshop for the Design of the
+ANDES Underground Laboratory, Valparaiso, Chile, 11--12 Jan 2012.
+
+\item \years{2012}H. Asorey [Pierre Auger Collaboration], {\emph{Heliospheric
+Modulation of Cosmic Rays Observed by the Pierre Auger Observatory and the LAGO
+Project}}, parallel talk at the 4$^{\mathrm{th}}$ International Workshop of High Energy
+Physics in the LHC Era HEP2012, Valparaiso, Chile, 4--10 Jan 2012.
+
+\item \years{2011}H. Asorey, {\emph{Fermi Problem: Power developed at the eruption of
+the Puyehue-Cordón Caulle volcanic system in June 2011}}, invited talk in the
+96$^{\mathrm{th}}$ National Reunion SUF-AFA2011 of the Argentinian Physics Association,
+Montevideo, Uruguay, 20--23 Sept 2011.
+
+\item \years{2011}I. Allekotte, H. Arnaldi, H. Asorey, X. Bertou, M. Gómez Berisso,
+M. Sofo Haro, {\emph{Development of ultra fast and ultra low power consumption
+electronics in the Bariloche Particle and Radiation Detection Laboratory}},
+poster presentation in the 96$^{\mathrm{th}}$ National Reunion SUF-AFA2011 of the Argentinian
+Physics Association, Montevideo, Uruguay, 20--23 Sept 2011.
+
+\item \years{2011}H. Asorey[Pierre Auger Collaboration], {\emph{Low energy radiation
+measurements with the water Cherenkov detector array of the Pierre Auger
+Observatory}}, in Proc. 32th International Cosmic Ray Conference, vol. 11
+462--465, Beijing, China, 11--18 Ago 2011
+
+\item \years{2011}The Pierre Auger Collaboration,
+\href{http://arxiv.org/abs/1107.4805}{\emph{The Pierre Auger Observatory III:
+Other Astrophysical Observations}}, en Proc. 32th International Cosmic Ray
+Conference, Beijing, China, 11--18 Ago 2011.
+
+\item \years{2010}H. Asorey[Pierre Auger Collaboration],
+\href{http://95rnf.afa.webfactional.com/tex\_files/Resumenes/DPyC/PyC\_6.pdf}{\emph{The
+infill array of the Pierre Auger Observatory}}, talk given in the Particle and
+Fields Division in the 95$^{\mathrm{th}}$ National Reunion AFA2011 of the Argentinian Physics
+Association, Malargüe, Argentina, 28 Sept--01 Oct 2010.
+
+\item \years{2010}H. Asorey, J. Castro, A. López Dávalos,
+\href{http://95rnf.afa.webfactional.com/tex\_files/Resumenes/EF/asorey.pdf}{\emph{Kepler,
+Newton, Feynman}}, poster presentation in the 95$^{\mathrm{th}}$ National Reunion AFA2011 of
+the Argentinian Physics Association, Malargüe, Argentina, 28 Sept--01 Oct 2010.
+
+\item \years{2010}H. Asorey[LAGO Collaboration], {\emph{The Large Aperture Gamma Ray
+Burst Observatory (LAGO)}}, plenary talk in the 3$^{\mathrm{rd}}$ International Workshop of
+High Energy Physics in the LHC Era HEP2010, Valparaiso, Chile, 4--8 Jan 2010.
+
+\item \years{2009}H. Asorey[Pierre Auger Collaboration], {\emph{Cosmic Ray Solar
+Modulation Studies at the Pierre Auger Observatory}}, in Proc. 31th
+International Cosmic Ray Conference, Lodz, Poland, 8--15 Jul 2009.
+
+\item \years{2009}The Pierre Auger Collaboration,
+\href{http://arxiv.org/abs/0906.2347}{\emph{Astrophysical Sources of Cosmic
+Rays and Related Measurements with the Pierre Auger Observatory}}, en Proc.
+31th International Cosmic Ray Conference, Lodz, Poland, 8--15 Jul 2009.
+
+\item \years{2009}The LAGO Collaboration,
+\href{http://arxiv.org/abs/0906.0816}{\emph{The Large Aperture GRB
+Observatory}}, en Proc. 31th International Cosmic Ray Conference, Lodz,
+Poland, 8--15 Jul 2009.
+
+\item \years{2009}H. Asorey[Pierre Auger Collaboration], {\emph{The Acceptance of the
+Pierre Auger Observatory}}, poster presentation in the VII Latinoamerican
+Symposium of High Energy Physics (SILAFAE), San Carlos de Bariloche, Argentina,
+14-21 Jan 2009.
+
+\item \years{2008}XVI Course of the ISCRA (International School of Cosmic Ray
+Astrophysics) 2008: ``Gamma Ray and Cosmic Ray Astrophysics: From below GeV to
+beyond EeV Energies'', Erice, Italia, Julio 2008
+
+\item \years{2008} Invited talk``Towards Cosmic ray Solar Modulation Studies'',
+University of Siegen, Siegen, Germany, 2008.
+
+\item \years{2007}D. Allard {\emph et al.} [LAGO Collaboration], {\emph{Looking for
+the high energy component of GRBs at the Large Aperture GRB Observatory}}, in
+Proc. 30$^{\mathrm{th}}$ International Cosmic Ray Conference,  Mérida, Mexico, 3-11 Jul
+2007.
+
+\item \years{2007}IV Latin American School of Strings LASS 07, San Carlos de
+Bariloche, January 2007.
+
+\item \years{2006}H. Asorey[Pierre Auger Collaboration], {\emph{The Surface Detector
+Array of the Pierre Auger Observatory}}, parallel talk in the 1$^{\mathrm{st}}$ International
+Workshop of High Energy Physics in the LHC Era HEP2006, Valparaiso, Chile,
+12--17 Dec 2006.
+
+\item \years{2006}D. Allard {\emph et al.} [LAGO Collaboration], {\emph{The Large
+Aperture GRB aperture}}, in Proc. of the Observational Astronomy in Argentina
+Workshop, Buenos Aires.
+
+\item \years{2005}Third CERN-CLAF Latin American School Of High Energy Physics, CERN,
+Malargüe, Argentina. Poster presentation: ``Event Reconstruction using the
+Surface Detectors At UHECR Pierre Auger Observatory''
+
+\item \years{2004}Sixth J. J. Giambiagi Winter School on Particle Physics, Facultad
+de Ciencias Exactas y Naturales, University of Buenos Aires. July 2004.
+
+\item \years{2005-2012} Sixteen technical and physics talks given at the Pierre Auger
+Collaboration meetings, Malargüe, Argentina.
+\end{etaremune}
+
+\section*{Internal notes of the Pierre Auger Observatory (GAP Notes)}
+
+See \href{http://www.auger.org/admin-cgi-bin/woda/gap\_notes.pl/Search?search=asorey}
+{www.auger.org/admin/GAP\_Notes}.\\
+
+\begin{etaremune}
+
+\item \years{2011} R. Ravignani, H. Asorey, D. Melo, G. De La Vega, A. Etchegoyen, A.
+Ferrero, R. F. Gamarra, B. García, M. Josebachuili, F. Sánchez, I. Sidelnik, A.
+Tapia, B. Wundheiler, {\emph{Observation of the spectrum with the AMIGA
+infill}}, Note 2011-010.
+\item \years{2009}H. Asorey, I. Allekotte, X. Bertou, M. Gómez~Berisso,
+{\emph{Acceptance of generalised Surface Detector Arrays from real data}}, Note 2009-155.
+\item \years{2009}H. Asorey, X. Bertou, D. Thomas, M. Mostafá, {\emph{The OMG
+Hybrid Event}}, Note 2011-154.
+\item \years{2009}H. Asorey, I. Allekotte, X. Bertou, M.
+Gómez~Berisso, {\emph{Determining the acceptance of the Pierre Auger Surface
+Detector with the Infill Array}}, Note 2009-112.
+\item \years{2009}I. Allekotte, H. Asorey, M. Gómez~Berisso, {\emph{Improving the
+determination of the Auger Surface Detector Single Station Trigger Probability
+from real data}}, Note 2009-019.
+\item \years{2008}H. Asorey, X. Bertou, {\emph{Determining the Dynamic Range
+needed for new Surface Detectors.}}, Note 2008-117.
+\item \years{2008}I. Allekotte, H. Asorey, X. Bertou, M. Gómez~Berisso,
+{\emph{You thought you understood hexagons?}}, Note 2008-114
+\item \years{2008}S. Grebe, I. Allekotte, H. Asorey, X. Bertou, P. Buchholz,
+{\emph{Robustness of the CDAS reconstruction algorithm.}}, Note 2008-112.
+\item \years{2008}H. Asorey, X. Bertou, {\emph{First large timescale analysis of
+Auger SD scaler data: Towards cosmic ray Solar modulation studies.}}, Note 2008-072.
+\item \years{2007}H. Asorey, I. Allekotte, {\emph{Towards a complete set of
+weather data.}}, Note 2007-088.
+\item \years{2006}H. Asorey, X. Bertou, E. Roulet, {\emph{How to improve the SD
+arrival direction reconstruction by correcting the start-time of individual
+detectors.}}, Note 2006-052.
+\item \years{2005}H. Asorey, I. Allekotte, M. Gómez~Berisso, X. Bertou,
+{\emph{Robustness of the angular reconstruction with the Surface Array of the
+Auger Observatory.}}, Note 2005-107.
+\item \years{2005}H. Asorey, I. Allekotte, M. Gómez~Berisso, X. Bertou,
+{\emph{Robustness of the energy reconstruction with the Surface Array of the
+Auger Observatory.}}, Note 2005-084.
+\end{etaremune}
+
+\section*{Organising \& other Academic Activities}
+
+\years{2011}Member of the local organising committee of the ``First
+International Workshop for the Design of the ANDES Underground Laboratory'',
+Constituyentes Atomic Centre, Buenos Aires, Argentina, 11-14 April 2011
+
+\years{2010}Member of the local organising committee of the ``XI ICFA School on
+Instrumentation in Elementary Particle Physics'', San Carlos de Bariloche,
+Argentina, Jan 2010.
+
+\years{2010}Member of the local organising committee of the ``95$^{\mathrm{th}}$ National
+Reunion of the Argentinian Physics Association'', Malargüe, Argentina, Sept-Oct
+2010.
+
+\years{2009}Member of the local organising committee of the ``VII
+Latinoamerican Symposium of High Energy Physics (SILAFAE)'', San Carlos de
+Bariloche, Argentina, January 2009.
+
+\years{2005}
+Member of the Instituto Balseiro Academic Council, elected by the Physics
+students. 
+
+
+\section*{Outreach \& Complementary Activities}
+\noindent
+\years{2011}H. Asorey, A. Clúa, A. López Dávalos
+\href{http://www.clarin.com/sociedad/Cien-millones-toneladas-cenizas-solo_0_517148395.html}{One
+hundred millions of tons in only one day}, Clarín (national circulation
+newspaper), 2011. Reproduced in hundreds of Argentinian and international
+newspapers and media. 
+
+\years{2011}H. Asorey, {\emph{Living with a star}}, Solar physics and space
+weather phenomena talk, oriented to general public and high-school students of
+the Rio Negro Province. Begin: March-2011
+
+\years{2010}{\emph{Work of Bariloche Atomic Centre Scientists distinguished}}
+(H. Asorey, X. Bertou, M. Gómez Berisso), El Cordillerano, Bariloche 2000 y
+ANBariloche, 2010.
+
+\years{2010}Laura García, {\emph{Latinoamerican network of detectors to study
+gamma radiation}} (H. Asorey, X. Bertou, M. Gómez Berisso), El Cordillerano,
+Bariloche 2000 and ANBariloche, 2010.
+
+\years{2009}H. Asorey, {\emph{Astrophysics for everyone}}, bimonthly column in
+the ``Nature and technology'' local magazine. 
+
+\years{2008}H. Asorey, {\emph{The Pierre Auger Observatory: a look to the
+Universe to the highest energies}}, invited talk oriented for general public,
+National University of Quilmes, Argentina, April 2008.
+
+\section*{Additional Information}
+
+\begin{itemize}
+\item Languages: Spanish (mother tongue); English (speaks, read, write); French
+(read), Italian (read and speaks)
+\item Computing skills: Linux and Windows operative system. Preferred editor:
+VIm.
+\item Programming skills: C/C++, Perl, Python, HTML, PHP, SQL, and Bash.
+\item Technical computing and data analysis software skills: root, gnuplot,
+spyder, Mathematica, AutoCAD design software.
+\end{itemize}
+
+\section*{References}
+
+For references of my work, please contact the following persons:
+
+Dr. Alberto Etchegoyen (\href{mailto:alberto.etchegoyen@iteda.cnea.gov.ar}{alberto.etchegoyen@iteda.cnea.gov.ar})
+
+Dr. Ingomar Allekotte (\href{mailto:ingo@cab.cnea.gov.ar}{ingo@cab.cnea.gov.ar})
+
+Dr. Esteban Roulet (\href{mailto:roulet@cab.cnea.gov.ar}{roulet@cab.cnea.gov.ar})
+
+Dr. Xavier Bertou (\href{mailto:bertou@cab.cnea.gov.ar}{bertou@cab.cnea.gov.ar})
+
+Dr. Piera Luisa Ghia (\href{mailto:piera.ghia@lpnhe.in2p3.fr}{piera.ghia@lpnhe.in2p3.fr})
+
+\vspace{2cm}
+\begin{flushright}
+Hernán Asorey\\
+May 2012.
+\end{flushright}
+\hrule
+\end{document}
