@@ -33,6 +33,9 @@
 \newif\ifeng
 %\engtrue
 
+\newif\ifres
+%\restrue
+
 \newcommand{\en}{\ifeng in \else en \fi}
 
 % HEADINGS
@@ -69,16 +72,19 @@
 
 \input{personal}
 
-\input{posi-edu-fellow}
+\input{posi-edu}
+
+\ifres
+~
+\else
+\input{prv-fellow}
+\fi
 
 \input{activ}
 
-\ifeng
-\section*{Publications}
+\ifres
+\input{count}
 \else
-\section*{Publicaciones}
-\fi
-
 \input{publi-sel}
 
 \input{publi-ref}
@@ -94,6 +100,7 @@
 \input{ad-info}
 
 \input{refer}
+\fi
 
 \vspace{2cm}
 \begin{flushright}
