@@ -1,4 +1,5 @@
 rm count.tex
+mv cv-org.tex cv.tex
 gap=`grep -c "years" publi-gap.tex`
 cnf=`grep -c "years" publi-cnf.tex`
 ref=`grep -c "years" publi-ref.tex`

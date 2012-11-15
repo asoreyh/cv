@@ -1,6 +1,5 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage{fontspec} 
-\usepackage[british]{babel}
 \usepackage{etaremune}
 
 % DOCUMENT LAYOUT
@@ -37,6 +36,12 @@
 %\restrue
 
 \newcommand{\en}{\ifeng in \else en \fi}
+
+\ifeng
+  \usepackage[british]{babel}
+\else
+  \usepackage[spanish]{babel}
+\fi
 
 % HEADINGS
 \usepackage{sectsty} 
@@ -93,6 +98,8 @@
 
 \input{publi-gap}
 
+\input{rrhh}
+
 \input{orga}
 
 \input{divul}
@@ -105,7 +112,7 @@
 \vspace{2cm}
 \begin{flushright}
 Hernán Asorey\\
-Sep 2012.
+\today
 \end{flushright}
 \hrule
 \end{document}
