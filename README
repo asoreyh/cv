@@ -1,1 +1,9 @@
-H. Asorey CV
+H. Asorey CV on git
+
+This is my personal CV. To build the new CV, just run 
+
+$./go-cv.sh
+
+It produces four CVs: english and spanish, full and summary versions. 
+
+Now on git (jue ene  8 17:30:04 COT 2015)

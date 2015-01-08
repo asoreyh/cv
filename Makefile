@@ -3,11 +3,13 @@ all:
 # FULL - ESP
 	xelatex cv.tex
 	xelatex cv.tex
+	xelatex cv.tex
 	mv cv.pdf asorey-cv-esp.pdf
 	cp cv-org.tex cv.tex
 	make clean
 # RES - ESP
 	cat cv-org.tex | sed 's/\%\\restrue/\\restrue/' > cv.tex
+	xelatex cv.tex
 	xelatex cv.tex
 	xelatex cv.tex
 	mv cv.pdf asorey-cv-res-esp.pdf
@@ -17,11 +19,13 @@ all:
 	cat cv-org.tex | sed 's/\%\\engtrue/\\engtrue/' > cv.tex
 	xelatex cv.tex
 	xelatex cv.tex
+	xelatex cv.tex
 	mv cv.pdf asorey-cv-eng.pdf
 	cp cv-org.tex cv.tex
 	make clean
 # RES - ENG
 	cat cv-org.tex | sed 's/\%\\engtrue/\\engtrue/' | sed 's/\%\\restrue/\\restrue/' > cv.tex
+	xelatex cv.tex
 	xelatex cv.tex
 	xelatex cv.tex
 	mv cv.pdf asorey-cv-res-eng.pdf
