@@ -89,27 +89,24 @@
 \input{activ}
 
 \ifres
-\input{ad-info}
-\input{rrhh-form}
-\input{count}
- \else
-\input{publi-sel}
-
-\input{publi-ref}
- 
-\input{publi-cnf}
- 
-\input{publi-gap}
- 
-\input{rrhh}
- 
-\input{orga}
- 
-\input{divul}
- 
-\input{ad-info}
- 
-\input{refer}
+  \input{ad-info}
+  \input{rrhh-form}
+  \input{count}
+\else
+  \input{rrhh}
+  \ifeng
+    \section*{Publications}
+  \else  
+    \section*{Publicaciones}
+  \fi
+  \input{publi-sel}
+  \input{publi-ref}
+  \input{publi-cnf}
+  \input{publi-gap}
+  \input{orga}
+  \input{divul}
+  \input{ad-info}
+  \input{refer}
 \fi
 
 \vspace{-.5cm}
