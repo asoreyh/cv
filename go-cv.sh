@@ -35,9 +35,9 @@ echo "\item \ifeng
 " >> count.tex
 
 echo "\item \ifeng
- {\bf{${gap}}} technical notes (GAP Notes) of the Pierre Auger Observatory. 
+ {\bf{${gap}}} technical reports of Comisión Nacional de Energía Atómica and internal technical notes of the Pierre Auger Observatory. 
 \else
-{\bf{${gap}}} notas técnicas (GAP Notes) del Observatorio Pierre Auger. 
+{\bf{${gap}}} reportes técnicos de la Comisión Nacional de Energía Atómica y notas técnicas (GAP Notes) del Observatorio Pierre Auger. 
 \fi
 " >> count.tex
 
