@@ -53,7 +53,7 @@ Ver la lista completa de publicaciones, trabajos y citaciones en alguno de los s
 \item[Google Scholar]: \href{http://scholar.google.com.co/citations?user=Vj7_fGsAAAAJ}{scholar.google.com.co/citations?user=Vj7\_fGsAAAAJ}
 \item[Scopus]: \href{http://www.scopus.com/authid/detail.url?authorId=35276880300}{www.scopus.com/authid/detail.url?authorId=35276880300}
 \item[Inspire-HEP]: \href{http://inspirehep.net/author/profile/H.Asorey.1}{inspirehep.net/author/profile/H.Asorey.1}
-\item[COLCIENCIAS]: \href{http://190.216.132.131:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000005467}{190.216.132.131:8081/cvlac/visualizador/generarCurriculoCv.do?cod\_rh=0000005467}
+% \item[COLCIENCIAS]: \href{http://190.216.132.131:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000005467}{190.216.132.131:8081/cvlac/visualizador/generarCurriculoCv.do?cod\_rh=0000005467}
 \end{description}
 ' >> count.tex
 make
