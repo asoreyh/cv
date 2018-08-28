@@ -5,6 +5,36 @@ cnf=`grep -c "years" publi-cnf.tex`
 ref=`grep -c "years" publi-ref.tex`
 org=`grep -c "years" orga.tex`
 div=`grep -c "years" divul.tex`
+# form
+pc=`grep -c "%% phd-cur" rrhh-form.tex`
+
+
+phd=`grep -c "%% phd" rrhh-form.tex`
+msc=`grep -c "%% mag" rrhh-form.tex`
+und=`grep -c "%% pre" rrhh-form.tex`
+tot=`grep -c "%% " rrhh-form.tex`
+
+# pc=`grep -c "%% phd-cur" rrhh-form.tex`
+# mc=`grep -c "%% mag-cur" rrhh-form.tex`
+# uc=`grep -c "%% pre-cur" rrhh-form.tex`
+# pe=`grep -c "%% phd-end" rrhh-form.tex`
+# me=`grep -c "%% mag-end" rrhh-form.tex`
+# ue=`grep -c "%% pre-end" rrhh-form.tex`
+
+echo "
+\ifeng
+\section*{Human Resources Training Summary}
+
+At present, I have trained a total of {\bf{${tot}}} students, {\bf{${phd}}} PhD students, {\bf{${msc}}} MSc students and {\bf{${und}}} undergraduated students. 
+
+\else
+\section*{Formación de Recursos Humanos}
+
+Hasta el momento he participado en la formación de un total de {\bf{${tot}}} estudiantes: {\bf{${phd}}} en la carrera de Doctorado en Física, {\bf{${msc}}} de la carrera de Maestría en Física y {\bf{${und}}} de Licenciatura en Física. 
+\fi
+" >> count.tex
+
+# Pubs
 
 echo "\ifeng
 \section*{Publication summary}
