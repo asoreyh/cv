@@ -7,11 +7,10 @@ org=`grep -c "years" 09-orga.tex`
 div=`grep -c "years" 10-divul.tex`
 # form
 pc=`grep -c "%% phd-cur" 04-rrhh-form.tex`
-
-
 phd=`grep -c "%% phd" 04-rrhh-form.tex`
 msc=`grep -c "%% mag" 04-rrhh-form.tex`
 und=`grep -c "%% pre" 04-rrhh-form.tex`
+pdo=`grep -c "%% pdo" 04-rrhh-form.tex`
 tot=`grep -c "%% " 04-rrhh-form.tex`
 
 # pc=`grep -c "%% phd-cur" rrhh-form.tex`
@@ -25,12 +24,16 @@ echo "
 \ifeng
 \section*{Human Resources Training Summary}
 
-At present, I have trained a total of {\bf{${tot}}} students, {\bf{${phd}}} PhD students, {\bf{${msc}}} MSc students and {\bf{${und}}} undergraduated students. 
+Up to now, I am training or I have successfully trained a total of {\bf{${tot}}} students and fellows, {\bf{${pdo}}}
+Post Doctoral researchers, {\bf{${phd}}} PhD students, {\bf{${msc}}} MSc students and {\bf{${und}}} undergraduated
+students in Argentina, Venezuela and Colombia.
 
 \else
 \section*{Formación de Recursos Humanos}
 
-Hasta el momento he participado en la formación de un total de {\bf{${tot}}} estudiantes: {\bf{${phd}}} en la carrera de Doctorado en Física, {\bf{${msc}}} de la carrera de Maestría en Física y {\bf{${und}}} de Licenciatura en Física. 
+Hasta el momento, me encuentro formando o he finalizado la formación de un total de {\bf{${tot}}} estudiantes y becarios:
+{\bf{${pdo}}} investigadores posdoctorales, {\bf{${phd}}} estudiantes de la carrera del Doctorado en Física, {\bf{${msc}}} de la carrera de Maestría en Física y
+{\bf{${und}}} de Licenciatura en Física en Argentina, Venezuela y Colombia.
 \fi
 " >> count.tex
 
