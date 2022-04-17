@@ -1,18 +1,18 @@
 rm count.tex
 mv cv-org.tex cv.tex
-gap=`grep -c "years" publi-gap.tex`
-cnf=`grep -c "years" publi-cnf.tex`
-ref=`grep -c "years" publi-ref.tex`
-org=`grep -c "years" orga.tex`
-div=`grep -c "years" divul.tex`
+gap=`grep -c "years" 08-publi-gap.tex`
+cnf=`grep -c "years" 07-publi-cnf.tex`
+ref=`grep -c "years" 06-publi-ref.tex`
+org=`grep -c "years" 09-orga.tex`
+div=`grep -c "years" 10-divul.tex`
 # form
-pc=`grep -c "%% phd-cur" rrhh-form.tex`
+pc=`grep -c "%% phd-cur" 04-rrhh-form.tex`
 
 
-phd=`grep -c "%% phd" rrhh-form.tex`
-msc=`grep -c "%% mag" rrhh-form.tex`
-und=`grep -c "%% pre" rrhh-form.tex`
-tot=`grep -c "%% " rrhh-form.tex`
+phd=`grep -c "%% phd" 04-rrhh-form.tex`
+msc=`grep -c "%% mag" 04-rrhh-form.tex`
+und=`grep -c "%% pre" 04-rrhh-form.tex`
+tot=`grep -c "%% " 04-rrhh-form.tex`
 
 # pc=`grep -c "%% phd-cur" rrhh-form.tex`
 # mc=`grep -c "%% mag-cur" rrhh-form.tex`
