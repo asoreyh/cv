@@ -82,7 +82,7 @@ Ver la lista completa de publicaciones, trabajos y citaciones en alguno de los s
 \fi
 
 \begin{description}
-\item[ORCID]: \href{http://orcid.org/0000-0002-4559-8785}{orcid.org/0000-0002-4559-8785}
+% \item[ORCID]: \href{http://orcid.org/0000-0002-4559-8785}{orcid.org/0000-0002-4559-8785}
 \item[Google Scholar]: \href{http://scholar.google.com.co/citations?user=Vj7_fGsAAAAJ}{scholar.google.com.co/citations?user=Vj7\_fGsAAAAJ}
 \item[Scopus]: \href{http://www.scopus.com/authid/detail.url?authorId=35276880300}{www.scopus.com/authid/detail.url?authorId=35276880300}
 \item[Inspire-HEP]: \href{http://inspirehep.net/author/profile/H.Asorey.1}{inspirehep.net/author/profile/H.Asorey.1}
