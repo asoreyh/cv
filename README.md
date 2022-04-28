@@ -4,7 +4,7 @@
 Last update: April, 28th, 2022
 
 My CVs:
-* [Spanish, brief, <5 pages](asorey-cv-res-esp.pd)
+* [Spanish, brief, <5 pages](asorey-cv-res-esp.pdf)
 * [English, brief, <5 pages](asorey-cv-res-eng.pdf)
 * [Spanish, full, >30 pages](asorey-cv-esp.pdf)
 * [English, full, >30 pages](asorey-cv-eng.pdf)
