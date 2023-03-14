@@ -1,0 +1,173 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec} 
+\usepackage{etaremune}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=6.1in, textheight=10.2in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+% \usepackage[usenames,dvipsnames]{color}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+\setromanfont{Carlito}
+
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+% ---- LANGUAGE OPTIONS
+% To get it in english, uncomment engtrue
+\newif\ifeng
+%\engtrue
+
+\newif\ifres
+%\restrue
+
+\newcommand{\en}{\ifeng in \else en \fi}
+\newcommand{\at}{\ifeng at the \else en la \fi}
+\usepackage[spanish]{babel}
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Hernán Asorey - vita},
+	pdfauthor={Hernán Asorey},
+]{hyperref}
+\usepackage{graphicx}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{.250em}
+  }
+}{
+  \end{list}
+}
+
+% DOCUMENT
+\begin{document}
+
+  \begin{center}{\huge \textbf {Hernán Asorey}}\\[1cm]\end{center}
+  \begin{center}
+	{\textbf{Comisión Nacional de Energía Atómica}}\\
+	{\textbf{Departamento Física Médica (DFM)}} \\ and \\
+	{\textbf{Instituto de Tecnologías en Detección y Astropartículas (ITeDA)}}\\
+%	\& \\
+%	{\textbf{Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)}}\\
+%	{\textbf{Unidad de Informática Científica}}\\
+%	{\textit{(estancia temporal)}}\\
+  \end{center}
+  \begin{minipage}[t]{0.55\textwidth}
+	Comisión Nacional de Energía Atómica\\
+	\hspace*{1em}DFM, Centro Atómico Bariloche\\
+	\hspace*{1em}ITeDA, Centro Atómico Constituyentes\\
+%	Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)\\
+%	\hspace*{1em}Unidad de Informática Científica (temporal)\\
+  \end{minipage}\hspace*{0.02\textwidth}
+  \begin{minipage}[t]{0.45\textwidth}
+    Av. Bustillo 9500\\
+    (8400) San Carlos de Bariloche\\
+%	Av. Complutense 40\\
+%	28040 Madrid, España\\
+%	Phone: (+54-294) 444-5100 ext 4842\\
+% 	Phone: (+54-11) 6772-7000 ext 6574\\
+%	Office: 22.0.11\\
+%	Phone: +34 91 346 6169\\
+%	Email: \href{mailto:Hernan.Asorey@externos.ciemat.es}{Hernan.Asorey@externos.ciemat.es}\\
+	email: \href{mailto:hernan.asorey@iteda.cnea.gov.ar}{hernan.asorey@iteda.cnea.gov.ar}\\
+%  	\href{http://fisica.cab.cnea.gov.ar/particulas/wiki/User:Asoreyh}{Home page}\\
+%  	twitter: \href{https://twitter.com/#!/asoreyh}{@asoreyh}\\
+%	Discord: asoreyh\#9106\\
+  \end{minipage}
+\hrule
+  \begin{description}
+    \item[Education]:
+      \begin{description}
+        \item [2007-2012:] Ph.D.\ in Physics, Instituto Balseiro, Advisor: Prof. Dr. Ingomar Allekotte.
+        \item [2004-2005:] MSc. in Physical Sciences, Instituto Balseiro
+        \item [2002-2004:] Licenciado in Physics, Instituto Balseiro.
+    \end{description}
+    \item [Employment]:
+    \begin{description}
+        \item[2021-:~~~~~~~~] Principal B Researcher, Medical Physics Department, CNEA.
+        \item[2015-:~~~~~~~~] Professor of Physics, Universidad Nacional de Río Negro.
+        \item[2017-2021:] Head of the Medical Physics Department, CNEA.
+        \item[2015-2017:] Principal C Researcher, Lab. DPR, CNEA.
+        \item[2014-2015:] Invited Professor, Universidad Industrial de Santander.
+        \item[2013-2014:] Postdoctoral researcher, Universidad Industrial de Santander.
+        \item[2007-2012:] Doctoral Fellow, CONICET, Particle and Fields Division.
+        \item[2006-2004:] Research assistant at the Pierre Auger Observatory, U.N. Cuyo, Bariloche.
+        \item[2002-2005:] Undergraduate and Master fellow, CNEA, Bariloche.
+        \item[1996-2002:] Mechanical designer and Project Manager, AIMSA, Buenos Aires.
+    \end{description}
+    \item [Collaboration Memberships]:
+    \begin{description}
+        \item[2007-:~~~~~~~~] The LAGO Collaboration, PI (2013-2016).
+        \item[2019-:~~~~~~~~] The PlomBoX project, PM (\href{https://plombox.org/}{plombox.org/})
+        \item[2004-:~~~~~~~~] The Pierre Auger Collaboration, Co-Task leader Cosmo-Geophysics (2015-2019)
+        \item[2010-2022:] The ANDES Collaboration, Design and background calculations.
+        \item[2012-2016:] The CTA Consortium, RD for Argentinian Candidate sites.
+    \end{description}
+    \item [Awards]:
+    \begin{description}
+        \item[2015] Innovation in Physics Teaching Award, Universidad Industrial de Santander.
+        \item[2014] Best Teacher Award, Universidad Industrial de Santander.
+        \item[2011] Best Teacher Award, Instituto Balseiro.
+    \end{description}
+    \item[Research Activities:] R-D in simulations of the interaction of radiation with matter and in particle and radiation detectors for astrophysical, safeguard, geophysical, and medical applications.
+    \item[Project Management:] Responsible or Co-Responsible investigator for the management of {\textbf{11}} research national and international projects in my research areas. Total funding: 1.5 MUSD.
+    \item[Lecturing:]
+    \begin{description}
+        \item [UNRN:] Professor of Physics: Thermodynamics (2018-:); Introduction to Particle Physics, Astrophysics and Cosmology (2017-:); Quantum Mechanics (2015-2016); Waves (2015-2016).
+        \item [UIS:] Professor of Physics: Introduction to Physics (2013-2014); Mechanics (2015); Particle Physics (2014), Astronomy (2015).
+        \item [I. Balseiro] Senior Teaching Assistant: Experimental Physics III and IV (2009-2012); Introduction to Nuclear and Particle Physics (2009-2012); Cosmic Rays Physics (2015-2016)
+        \item [UNSAM] Professor in Physics: Astroparticle Physics (2017-2022); Particle and Radiation Detection (2018-2020).
+    \end{description}
+    \item[Training]:
+    \begin{description}
+        \item [2013:-~~~~~~~] {\textbf{18}} students and fellows: 2 postdoctoral fellows; 5 Ph. D. students; 4 MSc. students; 7 undergraduate students.
+        \item[2013:-~~~~~~~] Reviewer in {\textbf{19}} dissertations for the defense of Bachelor's in Physics, Master's in Physical Sciences, Master's in Medical Physics and Doctorates in Physics at national and international Universities.
+    \end{description}
+    \item[Patents]: H. Asorey, I. Sidelnik, J.J. Blostein, M. Gómez Berisso, J. Lipovetzky, M. Sofo Haro; M. Pérez; L.H. Arnaldi; F. Alcalde. Argentinian track: AR20190100279: “Detector de Neutrones y Radiación Gamma Mediante el Empleo de un Detector Cherenkov en Agua”. Internation extension (PCT): PCT/IB2020/050869: \lq\lq{}Usage of Water Cherenkov Detectors for the detection of Neutrons and Gamma Radiation\rq\rq{}.
+    \item[Institutional Management]:
+    \begin{description}
+        \item [2017-2020:] Member of the Academic committee of the Master in Medical Physics Carrier, Instituto Balseiro, UN Cuyo.
+        \item [2017-2021:] Proposer, coordinator and member of the Advisory Committee of the Centro Latinoamericano de Formación Interdisciplinaria (CELFI) in Translational Medical Physics, Instituto Balseiro, UN Cuyo.
+    \end{description}
+    \item[Stays]:
+    \begin{description}
+        \item[2013-2014]: Postdoctoral fellow at Universidad Industrial de Santander (UIS). Topic: Astroparticle physics and its applications.
+        \item[2014-2015]: Invited professor at Universidad Industrial de Santander (UIS). Topic: Astroparticle physics and its applications.
+        \item[2021-2022]: Design and development of a Thematic Service within the EOSC-Synergy H2020 project.
+    \end{description}
+  \item[Scientific carrerr] Since 2005, I have been directly involved as an author or coauthor\footnote{Please see a complete list of papers and cites in \href{https://scholar.google.com/citations?user=Vj7_fGsAAAAJ}{Google Scholar} and \href{https://www.scopus.com/authid/detail.url?authorId=35276880300}{Scopus}} in {\textbf{100}} of {\textbf{127}} peer-reviewed publications and {\textbf{87}} conference proceedings.
+  I am also author of {\textbf{1}} introductory physics text book, {\textbf{25}} technical reports and technical notes at the Pierre Auger Observatory and at CNEA, and co-inventor of {\textbf{1}} international patent. My current productivity metrics are: Scopus: h=47; Google Scholar: total: h$_{\mathrm{tot}}$=57, i10=118, since 2017: h$_{\mathrm{5}}$=42 , i10$_\mathrm{5}$=101.
+  \end{description}
+\end{document}

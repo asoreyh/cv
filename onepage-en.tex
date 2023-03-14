@@ -1,0 +1,129 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+\usepackage{etaremune}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=6.1in, textheight=10.2in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+% \usepackage[usenames,dvipsnames]{color}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+% ---- LANGUAGE OPTIONS
+% To get it in english, uncomment engtrue
+\newif\ifeng
+%\engtrue
+
+\newif\ifres
+%\restrue
+
+\newcommand{\en}{\ifeng in \else en \fi}
+\newcommand{\at}{\ifeng at the \else en la \fi}
+\usepackage[spanish]{babel}
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Hernán Asorey - vita},
+	pdfauthor={Hernán Asorey},
+]{hyperref}
+\usepackage{graphicx}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{.250em}
+  }
+}{
+  \end{list}
+}
+
+% DOCUMENT
+\begin{document}
+
+  \begin{center}{\huge \textbf Hernán Asorey}\\[1cm]\end{center}
+  \begin{center}
+	{\textbf{Comisión Nacional de Energía Atómica}}\\
+	{\textbf{Departamento Física Médica (DFM)}}\\
+	%{\textbf{Instituto de Tecnologías en Detección y Astropartículas (ITeDA)}}\\
+	\& \\
+	{\textbf{Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)}}\\
+	{\textbf{Unidad de Informática Científica}}\\
+	%{\textit{(estancia temporal)}}\\
+	{\textbf{Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)}}\\
+	{\textbf{Unidad de Informática Científica}}\\
+
+  \end{center}
+  \begin{minipage}[t]{0.55\textwidth}
+	Comisión Nacional de Energía Atómica\\
+	\hspace*{1em}DFM, Centro Atómico Bariloche\\
+	\hspace*{1em}ITeDA, Centro Atómico Constituyentes\\
+ 	Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)\\
+	\hspace*{1em}Unidad de Informática Científica\\
+  \end{minipage}\hspace*{0.02\textwidth}
+  \begin{minipage}[t]{0.45\textwidth}
+	Av. Complutense 40\\
+	28040 Madrid, España\\
+%	Phone: (+54-294) 444-5100 ext 4842\\
+% 	Phone: (+54-11) 6772-7000 ext 6574\\
+	Office: 22.0.11\\
+	Phone: +34 91 346 6169\\
+%	Email: \href{mailto:Hernan.Asorey@externos.ciemat.es}{Hernan.Asorey@externos.ciemat.es}\\
+	correo: \href{mailto:hernan.asorey@iteda.cnea.gov.ar}{hernan.asorey@iteda.cnea.gov.ar}\\
+%  	\href{http://fisica.cab.cnea.gov.ar/particulas/wiki/User:Asoreyh}{Home page}\\
+%  	twitter: \href{https://twitter.com/#!/asoreyh}{@asoreyh}\\
+%	Discord: asoreyh\#9106\\
+  \end{minipage}
+\hrule
+  \section*{Resumen}\label{sec:resumen}
+  \begin{description}
+    \item[Formación:] Doctor en Física (Instituto Balseiro, 2012); Magíster en Ciencias Físicas, orientación partículas y campos (Instituto Balseiro, 2005); Licenciado en Física (Instituto Balseiro, 2004)
+    \item[Línea de investigación:] Diseño de simulaciones de la interacción de la radiación con la materia y de detectores de partículas y radiación para aplicaciones astrofísicas, de salvaguarda, geofísicas, y médicas.
+    \item[Gestión institucional:]
+    \begin{itemize}
+        \item Jefe del Departamento\footnote{Equivalente a Jefe de División.} Física Médica (2017-2021), Gerencia Física, Comisión Nacional de Energía Atómica.
+        Responsabilidad de gestión de recursos humanos y evaluación del personal a cargo, y ejecución de fondos públicos y fondos provenientes de proyectos nacionales e internacionales (total $\sim 4$M€)
+        \item Investigador Principal del Observatorio Latino Americano Gigante (LAGO), 2013-2016.
+        Diseño y puesta en ejecución la organización actual del Proyecto LAGO y de los programas de meteorología del espacio y de vinculación universitaria.
+    \end{itemize}
+    \item[Gestión de proyectos:] Investigador responsable o corresponsable para la gestión de {\textbf{11}} proyectos de investigación nacionales e internacionales en mis líneas de investigación
+    \item[Docencia:] Profesor Asociado (para Titular, Asociado y Adjunto) en la Universidad Nacional de Río Negro (UNRN) y de la Universidad Nacional de San Martín (UNSAM).
+    Ganador de dos premios como Mejor Profesor (elección por los estudiantes de los cursos dictados)
+    \item[Formación de recursos humanos:] Me encuentro formando o he finalizado la formación de un total de {\textbf{18}} estudiantes y becarios: 2 investigadores postdoctorales, 5 estudiantes de la carrera del Doctorado en Física, 4 de la carrera de Maestría en Física y 7 de Licenciatura en Física en Argentina, Venezuela y Colombia.
+    \item[Producción científica] Desde el año 2005 hasta la fecha, he sido autor o coautor\footnote{Puede consultarse una lista completa de publicaciones y citas en \href{https://scholar.google.com/citations?user=Vj7_fGsAAAAJ}{Google Scholar} o en \href{https://www.scopus.com/authid/detail.url?authorId=35276880300}{Scopus}} de: {\textbf{100}} trabajos con participación directa en {\textbf{127}} publicaciones en revistas con revisión de pares y {\textbf{87}} participaciones y presentaciones en escuelas y conferencias nacionales e internacionales.
+    Autor de {\textbf{25}} reportes técnicos de la Comisión Nacional de Energía Atómica y notas técnicas del Observatorio Pierre Auger y de {\textbf{1}} libro de texto de física universitaria.
+    Miembro del grupo inventor de {\textbf{1}} patente (tramos: Argentina, Internacional PCT, USA y Europa).\\
+    Índice h: $h$=47 (Scopus), $h_{\mathrm{tot}}$=57 (Google Scholar), $h_{\mathrm{5}}$=42 (Google Scholar, desde 2017)
+  \end{description}
+\end{document}

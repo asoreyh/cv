@@ -11,8 +11,23 @@
 % \usepackage[usenames,dvipsnames]{color}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[math-style=upright]{unicode-math}
+\usepackage[sfdefault]{carlito}
+\defaultfontfeatures{Scale=MatchUppercase}
+\usepackage{inconsolata}
+\setmathfont{Asana Math}
+\setmathfont[range={up,"002B,"002D,`±,`×,`·,`÷,`¬,`∂,`∆,`∕,`∞,`⌐}]{Carlito}
+\setmathfont[range=it]{Carlito Italic}
+\setmathfont[range=bfup]{Carlito Bold}
+\setmathfont[range=bfit]{Carlito Bold Italic}
+\setoperatorfont\normalfont % For log, sin, cos, etc.
+% margins and page size
+
 %\setmonofont[Scale=0.8]{Monaco}
 
 % ---- CUSTOM COMMANDS
