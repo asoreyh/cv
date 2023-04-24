@@ -50,13 +50,19 @@
 \newif\ifres
 %\restrue
 
+\newif\ifper  %personal
+%\pertrue
+
+\newif\ifpien %piensas based
+%\pientrue
+
 \newcommand{\en}{\ifeng in \else en \fi}
 \newcommand{\at}{\ifeng at the \else en la \fi}
 
 \ifeng
-  \usepackage[british]{babel}
+\usepackage[british]{babel}
 \else
-  \usepackage[spanish]{babel}
+\usepackage[spanish]{babel}
 \fi
 
 % HEADINGS
@@ -70,8 +76,8 @@
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
 \usepackage[bookmarks, colorlinks, breaklinks, 
 % ---- FILL IN HERE THE TITLE AND AUTHOR
-	pdftitle={Hernán Asorey - vita},
-	pdfauthor={Hernán Asorey},
+    pdftitle={Hernán Asorey - vita},
+    pdfauthor={Hernán Asorey},
 ]{hyperref}
 \usepackage{graphicx}
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
